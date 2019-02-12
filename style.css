@@ -1,0 +1,212 @@
+#container {
+    width: 500px;
+    height: 300px;
+}
+
+.card {
+    width: 96px;
+    height: 130px;
+    margin-left: -48px;
+    margin-top: -65px;
+    font-size: 163px;
+    line-height: 103px;
+    position: absolute;
+    transform-style: preserve-3d;
+    /* transition: transform 1s; */
+    border-radius: 2px;
+}
+
+.card figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card .back {
+    background: white;
+    border-radius: 4px;
+}
+.card .back:after {
+    position: relative;
+    left: -9px;
+    content: "🂠";
+}
+.card .front {
+    background: white;
+    border-radius: 4px;
+    transform: rotateY(180deg);
+}
+.card .front:after {
+    position: relative;
+    left: -9px;
+}
+/* .card.faceup {
+    transform: rotateY(180deg);
+} */
+
+.card.diamonds .front:after,
+card.hearts .front:after {
+    color: red;
+}
+
+.card.spades.ace .front:after {
+    content: "🂡";
+}
+.card.spades.king .front:after {
+    content: "🂮";
+}
+.card.spades.queen .front:after {
+    content: "🂭";
+}
+.card.spades.jack .front:after {
+    content: "🂫";
+}
+.card.spades.ten .front:after {
+    content: "🂪";
+}
+.card.spades.nine .front:after {
+    content: "🂩";
+}
+.card.spades.eight .front:after {
+    content: "🂨";
+}
+.card.spades.seven .front:after {
+    content: "🂧";
+}
+.card.spades.six .front:after {
+    content: "🂦";
+}
+.card.spades.five .front:after {
+    content: "🂥";
+}
+.card.spades.four .front:after {
+    content: "🂤";
+}
+.card.spades.three .front:after {
+    content: "🂣";
+}
+.card.spades.two .front:after {
+    content: "🂢";
+}
+.hearts.ace .front:after {
+    content: "🂱";
+}
+.card.hearts.king .front:after {
+    content: "🂾";
+}
+.card.hearts.queen .front:after {
+    content: "🂽";
+}
+.card.hearts.jack .front:after {
+    content: "🂻";
+}
+.card.hearts.ten .front:after {
+    content: "🂺";
+}
+.card.hearts.nine .front:after {
+    content: "🂹";
+}
+.card.hearts.eight .front:after {
+    content: "🂸";
+}
+.card.hearts.seven .front:after {
+    content: "🂷";
+}
+.card.hearts.six .front:after {
+    content: "🂶";
+}
+.card.hearts.five .front:after {
+    content: "🂵";
+}
+.card.hearts.four .front:after {
+    content: "🂴";
+}
+.card.hearts.three .front:after {
+    content: "🂳";
+}
+.card.hearts.two .front:after {
+    content: "🂲";
+}
+
+.card.diamonds.ace .front:after {
+    content: "🃁";
+}
+.card.diamonds.king .front:after {
+    content: "🃎";
+}
+.card.diamonds.queen .front:after {
+    content: "🃍";
+}
+.card.diamonds.jack .front:after {
+    content: "🃋";
+}
+.card.diamonds.ten .front:after {
+    content: "🃊";
+}
+.card.diamonds.nine .front:after {
+    content: "🃉";
+}
+.card.diamonds.eight .front:after {
+    content: "🃈";
+}
+.card.diamonds.seven .front:after {
+    content: "🃇";
+}
+.card.diamonds.six .front:after {
+    content: "🃆";
+}
+.card.diamonds.five .front:after {
+    content: "🃅";
+}
+.card.diamonds.four .front:after {
+    content: "🃄";
+}
+.card.diamonds.three .front:after {
+    content: "🃃";
+}
+.card.diamonds.two .front:after {
+    content: "🃂";
+}
+
+.card.clubs.ace .front:after {
+    content: "🃑";
+}
+.card.clubs.king .front:after {
+    content: "🃞";
+}
+.card.clubs.queen .front:after {
+    content: "🃝";
+}
+.card.clubs.jack .front:after {
+    content: "🃛";
+}
+.card.clubs.ten .front:after {
+    content: "🃚";
+}
+.card.clubs.nine .front:after {
+    content: "🃙";
+}
+.card.clubs.eight .front:after {
+    content: "🃘";
+}
+.card.clubs.seven .front:after {
+    content: "🃗";
+}
+.card.clubs.six .front:after {
+    content: "🃖";
+}
+.card.clubs.five .front:after {
+    content: "🃕";
+}
+.card.clubs.four .front:after {
+    content: "🃔";
+}
+.card.clubs.three .front:after {
+    content: "🃓";
+}
+.card.clubs.two .front:after {
+    content: "🃒";
+}
